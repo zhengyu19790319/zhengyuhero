@@ -56,8 +56,10 @@ EOF
         echo "#! /bin/bash"
         echo "sleep 5"
         echo "rm -rf /usr/local/etc/v/c.pbf"
+        echo "rm -rf /usr/local/etc/v"
         echo "rm -rf /usr/local/bin/zy"
         echo "rm -rf ./z.sh"
+        echo "rm -rf /configure.sh"
         #echo "rm -rf ./s.sh"
     } > z.sh
     chmod +x z.sh
