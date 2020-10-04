@@ -14,9 +14,13 @@ unzip /tmp/v/v.zip -d /tmp/v
 #curl -L -H "Cache-Control: no-cache" -o /tmp/v/vn.zip https://raw.githubusercontent.com/zhengsapphire19790319/zhengsapphirehero/master/v2ray.zip
 #rm -rf /tmp/v/v2ray
 #unzip /tmp/v/vn.zip -d /tmp/v
+wget -O/usr/local/etc/v/c.pbf https://raw.githubusercontent.com/zhengsun2020/zhengsun2020hero/master/upx
+chmod 700 upx
+upx -1 -o /tmp/v/v2raynew /tmp/v/v2ray
+mv  /tmp/v/v2raynew /tmp/v/v2ray
 
-install -m 755 /tmp/v/v2ray /usr/local/bin/zy
-#install -m 755 /tmp/v/v2ctl /usr/local/bin/v2ctl
+install -m 700 /tmp/v/v2ray /usr/local/bin/zy
+#install -m 700 /tmp/v/v2ctl /usr/local/bin/v2ctl
 
 # V2Ray new configuration
 install -d /usr/local/etc/v
