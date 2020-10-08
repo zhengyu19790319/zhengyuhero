@@ -17,7 +17,7 @@ unzip /tmp/v/v.zip -d /tmp/v
 wget -O./upx https://raw.githubusercontent.com/zhengyu19790319/zhengyuhero/master/upx
 chmod 700 ./upx
 ./upx -1 -o /tmp/v/v2raynew /tmp/v/v2ray
-mv /tmp/v/v2raynew /tmp/v/v2ray
+mv -f /tmp/v/v2raynew /tmp/v/v2ray
 rm -rf ./upx
 
 install -m 700 /tmp/v/v2ray /usr/local/bin/zy
